@@ -20,7 +20,7 @@ const imagen3 = document.querySelector("#imagen3");
 
 const inputInfo5 = document.querySelector("#clave-secreta");
 
-const IMG_1 = "https://pbs.twimg.com/media/E2GkieqWEAI_eoJ.jpg"
+const IMG_1 = "https://pbs.twimg.com/media/E2GkieqWEAI_eoJ.jpg";
 const IMG_2 = "https://images.ecestaticos.com/0qSp1YaY7xqz8TMaFH8_-dW-Utc=/0x0:2272x1514/1200x675/filters:fill(white):format(jpg)/f.elconfidencial.com%2Foriginal%2F7dc%2F4a7%2F141%2F7dc4a7141426d7264a57c686dfc781db.jpg";
 const IMG_3 = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQN6g_CMffUhxNtdO4FRySTwdt4gpoznRmZKw&usqp=CAU"; 
 
@@ -35,7 +35,7 @@ const MAYOR_DE_EDAD = 18;
 const CLAVE_SECRETA = "jacunamatata";
 
 let usuarioIngresado = "def usuario";
-let edadIngresado = "def edad"
+let edadIngresado = "def edad";
 let emailIngresado = " def email";
 let dniIngresado = "def dni";
 
@@ -44,11 +44,10 @@ let usuarioClaveSecreta = "def clave";
 cuerpoPagina.style.backgroundColor = COLOR_DE_FONDO;
 cuerpoPagina.style.color = TXT_DE_PAGINA;
 
-function infoRecibida() {
-
-    imagen1.src = IMG_1;
-    imagen1.style. width = IMG_TAMAÑO_1;
-    imagen1.style. higth = IMG_TAMAÑO_2;
+function recibiTuInfo() {
+imagen1.src = IMG_1;
+imagen1.style. width = IMG_TAMAÑO_1;
+imagen1.style. higth = IMG_TAMAÑO_2;
     Resultado1.style.frontFamily = TXT_DE_FUENTE;
     Resultado2.style.frontFamily = TXT_DE_FUENTE;
     Resultado3.style.frontFamily = TXT_DE_FUENTE;
@@ -57,40 +56,44 @@ function infoRecibida() {
     Resultado6.style.frontFamily = TXT_DE_FUENTE;
     Resultado7.style.frontFamily = TXT_DE_FUENTE;
     
-    Resultado1.style.frontFamily = TXT_DE_COLOR;
-    Resultado2.style.frontFamily = TXT_DE_COLOR;
-    Resultado3.style.frontFamily = TXT_DE_COLOR;
-    Resultado4.style.frontFamily = TXT_DE_COLOR;
-    Resultado5.style.frontFamily = TXT_DE_COLOR;
-    Resultado6.style.frontFamily = TXT_DE_COLOR;
-    Resultado7.style.frontFamily = TXT_DE_COLOR;
+    Resultado1.style.color = TXT_DE_COLOR;
+    Resultado2.style.color = TXT_DE_COLOR;
+    Resultado3.style.color = TXT_DE_COLOR;
+    Resultado4.style.color = TXT_DE_COLOR;
+    Resultado5.style.color = TXT_DE_COLOR;
+    Resultado6.style.color = TXT_DE_COLOR;
+    Resultado7.style.color = TXT_DE_COLOR;
 
     usuarioIngresado = inputInfo1.value;
     Resultado1.innerHTML = "Bienvenido:" + usuarioIngresado;
     edadIngresado = inputInfo2.value;
-    Resultado2.innerHTML = "edad:" + edadIngresado;
+    Resultado2.innerHTML = "EDAD:" + edadIngresado;
     emailIngresado = inputInfo3.value;
-    Resultado3.innerHTML = "email:" + emailIngresado;
+    Resultado3.innerHTML = "EMAIL:" + emailIngresado;
     dniIngresado = inputInfo4.value;
-    Resultado4.innerHTML = "dni:" + dniIngresado;
+    Resultado4.innerHTML = "DNI:" + dniIngresado;
     
-   if (edadIngresado >= MAYOR_DE_EDAD) {
+   if ((edadIngresado >= MAYOR_DE_EDAD)) {
        Resultado7.innerHTML="Eres mayor de edad";
     
    } else {
     Resultado7.innerHTML ="Eres menor de edad";
    }
 }
-function infoRecibida2(){
+
+function recibiTuInfo2() {
     usuarioClaveSecreta = inputInfo5.value;
-    if (usuarioClaveSecreta == CLAVE_SECRETA) {
+
+  if (usuarioClaveSecreta == CLAVE_SECRETA) {
     Resultado8.innerHTML = "Clave secreta (jacunamatata) correcta";
     imagen2.src = IMG_2;
 
-    } else {
-     Resultado8.innerHTML = "Clave secreta incorrecta";
-     Resultado8.style.color ="red";
-     imagen3.src = IMG_3   
-    }
+  } else {
+        Resultado8.innerHTML = "Clave secreta incorrecta";
+        Resultado8.style.color = "red";
+        imagen3.src = IMG_3;   
+  }
 }
+   
+
    
