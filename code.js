@@ -80,7 +80,7 @@ function infoRecibida() {
     Resultado7.innerHTML ="Eres menor de edad";
    }
 }
-function infoRecibida2(){}
+function infoRecibida2(){
     usuarioClaveSecreta = inputInfo5.value;
     if (usuarioClaveSecreta == CLAVE_SECRETA) {
     Resultado8.innerHTML = "Clave secreta (jacunamatata) correcta";
@@ -91,3 +91,5 @@ function infoRecibida2(){}
      Resultado8.style.color ="red";
      imagen3.src = IMG_3   
     }
+}
+   
