@@ -4,14 +4,14 @@ const inputInfo3 = document.querySelector("#info-email");
 const inputInfo4 = document.querySelector("#info-dni");
 
 
-const Resultado1 = document.querySelector("#resultado-1");
-const Resultado2 = document.querySelector("#resultado-2");
-const Resultado3 = document.querySelector("#resultado-3");
-const Resultado4 = document.querySelector("#resultado-4");
-const Resultado5 = document.querySelector("#resultado-5");
-const Resultado6 = document.querySelector("#resultado-6");
-const Resultado7 = document.querySelector("#resultado-7");
-const Resultado8 = document.querySelector("#resultado-clave-secreta");
+const Resultado1 = document.querySelector("#Resultado-1");
+const Resultado2 = document.querySelector("#Resultado-2");
+const Resultado3 = document.querySelector("#Resultado-3");
+const Resultado4 = document.querySelector("#Resultado-4");
+const Resultado5 = document.querySelector("#Resultado-5");
+const Resultado6 = document.querySelector("#Resultado-6");
+const Resultado7 = document.querySelector("#Resultado-7");
+const Resultado8 = document.querySelector("#Resultado-palabra-clave");
 
 const cuerpoPagina = document.querySelector("body");
 const imagen1 = document.querySelector("#imagen1");
@@ -45,7 +45,7 @@ cuerpoPagina.style.backgroundColor = COLOR_DE_FONDO;
 cuerpoPagina.style.color = TXT_DE_PAGINA;
 
 function recibiTuInfo() {
-    
+
 imagen1.src = IMG_1;
 imagen1.style. width = IMG_TAMAÑO_1;
 imagen1.style. higth = IMG_TAMAÑO_2;
