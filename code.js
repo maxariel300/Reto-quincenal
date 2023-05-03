@@ -26,7 +26,7 @@ const IMG_3 = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQN6g_CMffUh
 
 const COLOR_DE_FONDO = "#0d1117";
 const TXT_DE_PAGINA = "#e6edf3";
-const TXT_DE_FUENTE = "#menospace";
+const TXT_DE_FUENTE = "monospace";
 const TXT_DE_COLOR = "yellow";
 const IMG_TAMAÑO_1 = "400px";
 const IMG_TAMAÑO_2 = "350px";
@@ -45,9 +45,10 @@ cuerpoPagina.style.backgroundColor = COLOR_DE_FONDO;
 cuerpoPagina.style.color = TXT_DE_PAGINA;
 
 function infoRecibida() {
-    imagen1.scr = IMG_1
-    imagen1.style. width = IMG_TAMAÑO_1
-    imagen1.style. higth = IMG_TAMAÑO_2
+
+    imagen1.src = IMG_1;
+    imagen1.style. width = IMG_TAMAÑO_1;
+    imagen1.style. higth = IMG_TAMAÑO_2;
     Resultado1.style.frontFamily = TXT_DE_FUENTE;
     Resultado2.style.frontFamily = TXT_DE_FUENTE;
     Resultado3.style.frontFamily = TXT_DE_FUENTE;
