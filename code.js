@@ -45,6 +45,7 @@ cuerpoPagina.style.backgroundColor = COLOR_DE_FONDO;
 cuerpoPagina.style.color = TXT_DE_PAGINA;
 
 function recibiTuInfo() {
+    
 imagen1.src = IMG_1;
 imagen1.style. width = IMG_TAMAÑO_1;
 imagen1.style. higth = IMG_TAMAÑO_2;
